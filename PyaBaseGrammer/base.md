@@ -37,7 +37,7 @@
 
 4. 数据类型
    Number-数字类型  String-字符串类型  Tuple-元组类型  List-列表类型  Dictionary-字典类型  Sets-集合类型
-
+   
    4.1 Number
        int-整型  long-长整型  float-浮点类型  bool-布尔类型  complex-复数类型
 
