@@ -11,9 +11,6 @@ def strTest():
     print("the operator of '[:]' test:%s"%str[1:7])
     print("the operator of 'in' test:%s"%('a' in str))
     print("the operator of 'not in' test:%s"%('a' not in str))
-
-def strOftenMethodTest():
-    print()
     
 if __name__ == "__main__":
     strTest()

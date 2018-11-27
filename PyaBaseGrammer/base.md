@@ -45,23 +45,45 @@
        单引号与双引号  三引号  转义字符   
 
    4.3 Tuple
-       定义：
+       创建：tp1 = (1,2,3) ,tp2 = ('abcd'), tp2 = tuple(['a','b','c'])
        
-       访问：
-
-       修改：
-
-       删除：   
+       访问：tp1 = (1,2) , tp1[2]   
 
    4.4 List
-       定义：
+       创建： list1 = [1,2,3,4,5] , list2 = list(('a','b','c','d'))
 
-       访问：
+       访问： list1[0] list1[1:3] 
 
+       赋值： x = [1,2,3] , x[2] = 5 
 
+       元素删除：del x[2]
+
+       列表分片赋值：x = list1[1:3]
+
+       列表常用方法：append() count() extend() reverse() remove() sort()
+       
    4.5 Dictionary
+       格式：d = {key1:value1,key2:value2}
 
-   4.6 Sets
+       创建：d1 = dict([('name','li'),('sex','male')]) , d2 = {name:li,age:20,sex:male} , d3 = {} 
+
+       访问：value = dict[key] 
+
+       赋值：dict['x'] = value
+
+       常用方法：dict() clear() pop() get() keys() values() update()
+
+       全局字典： sys.modules模块
+
+   4.6 Sets  集合中元素是无序的
+       创建：s1 = set('python') ,s2 = set((1,2,3)), s3 = set([1,2,3]), s4 = {1,2,3,4} ,s5 = set() 
+
+       常用方法：add() update() remove() 
+
+       集合运算符操作： == != < > >= <= | & -
+
+   4.7 序列
+       能通过索引访问的数据类型都是序列，即字符串，元组，列表
 
 2. 运算符与表达式
    算术运算符与表达式       [ +, -, *, /, %, //, ** ]
@@ -71,3 +93,7 @@
    赋值运算符与表达式       [ =, +=, -=, *=, /=, %=, //=, **= ]
    字符串运算符与表达式     [ +, [], [:], in, not in, % ]
 
+3. 常用函数
+   类型转换常用函数        int(x) float(x) str(x) chr(x) ord(x) hex(x) oct(x) tuple(s) list(s) set(s) dict(d)
+   数学常用函数            abs(x) fabs(x) ceil(x) floor(x) pow(x,y) exp(x) sqrt(x) log10(x) log(x[,y]) sin(x) cos(x) tan(x)
+   字符串常用函数          capitalize() lower() upper() title() count(x) index(s) find(s) encode(coding) split(delimter) join()
