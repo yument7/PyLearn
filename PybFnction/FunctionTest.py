@@ -93,6 +93,20 @@ def mergeSort(goalList):
         target.append(right[j])
         j+=1
     return target
+
+# lambda 函数使用， 计算(x+y)*(m-n)
+def lambdaFunc():
+    x = 1; y = 2; m = 3; n =4
+    sumx = lambda x, y : x + y
+    print('sum=%s'%sumx)
+    sub = lambda m, n : m - n
+    print('sub=%s'%sub)
+    return sumx(x,y)*sub(m,n)
+
+# Generator 函数使用
+def generatorFunc(n):
+    for i in range(n):
+        yield i
                        
 if __name__ == "__main__":
     goalList = [1,2,23,12,7,16,34,25,11,19]
@@ -117,3 +131,11 @@ if __name__ == "__main__":
     elif choose == 6:
         sortArray = mergeSort(goalList)
         print(sortArray)
+    elif choose == 7:
+        print(lambdaFunc())
+    elif choose == 8:
+        for i in generatorFunc(3):
+            print(i)
+        r = generatorFunc(4)    
+        print(next(r))
+        print(next(r))
